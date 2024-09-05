@@ -1,0 +1,14 @@
+cc_binary {
+    name: "nt.charging-control",
+    init_rc: ["nt.charging.control.rc"],
+    srcs: [
+        "service.cpp",
+        "charging-control.cpp",
+    ],
+    vendor: true,
+    shared_libs: [
+        "liblog",
+        "libbinder_ndk",
+        "android.hardware.health-V2-ndk",
+    ],
+}

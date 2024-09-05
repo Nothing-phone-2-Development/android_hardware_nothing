@@ -1,0 +1,11 @@
+type hal_nt_chg, domain;
+type hal_nt_chg_exec, file_type, exec_type, vendor_file_type;
+
+init_daemon_domain(hal_nt_chg)
+hal_client_domain(hal_nt_chg, hal_health)
+
+binder_call(hal_nt_chg, servicemanager)
+
+rw_dir_file(hal_nt_chg, vendor_sysfs_battery_supply)
+r_dir_file(hal_nt_chg, vendor_sysfs_usb_supply)
+r_dir_file(hal_nt_chg, sysfs_thermal)
