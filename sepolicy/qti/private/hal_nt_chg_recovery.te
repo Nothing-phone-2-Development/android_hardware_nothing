@@ -1,0 +1,8 @@
+type hal_nt_chg_recovery_exec, file_type, exec_type, system_file_type;
+
+init_daemon_domain(hal_nt_chg_recovery)
+hal_client_domain(hal_nt_chg_recovery, hal_health)
+
+binder_call(hal_nt_chg_recovery, servicemanager)
+
+r_dir_file(hal_nt_chg_recovery, sysfs_thermal)

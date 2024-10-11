@@ -1,2 +1,3 @@
 # Charging
 type vendor_sysfs_wireless, fs_type, sysfs_type;
+type hal_nt_chg_recovery, domain, mlstrustedobject, coredomain;
