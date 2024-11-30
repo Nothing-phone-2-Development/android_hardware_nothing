@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (C) 2024 The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Animations -->
+    <string-array name="glyph_settings_animations_slugs" translatable="false">
+        <item>camera</item>
+        <item>slant</item>
+        <item>center</item>
+        <item>bar</item>
+        <item>dot</item>
+    </string-array>
+    <integer-array name="glyph_settings_animations_supported_pattern_lengths" translatable="false">
+        <item>5</item>
+    </integer-array>
+
+    <!-- Battery Animations -->
+    <bool name="glyph_settings_battery_dot" translatable="false">true</bool>
+    <integer name="glyph_settings_battery_levels_num" translatable="false">9</integer>
+
+    <!-- Call Animations -->
+    <string name="glyph_settings_call_animations_default" translatable="false">Beetle (Custom)</string>
+
+    <!-- Notification Animations -->
+    <string name="glyph_settings_notifs_animations_default" translatable="false">Beak (Custom)</string>
+    <integer name="glyph_settings_notifs_essential_led" translatable="false">1</integer>
+
+    <!-- Volume Animations -->
+    <integer name="glyph_settings_volume_levels_num" translatable="false">8</integer>
+
+</resources>
