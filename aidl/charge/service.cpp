@@ -4,13 +4,13 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-#define LOG_TAG "nt.charging-control.service"
+#define LOG_TAG "vendor.nt.hardware.charge-service"
 
 #include <android/binder_manager.h>
 #include <android/binder_process.h>
 #include <log/log.h>
 
-#include "charging-control.h"
+#include "charge.h"
 
 int main() {
     auto service_name = string() + IHealth::descriptor + "/default";

@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-#define LOG_TAG "nt.charging-control"
+#define LOG_TAG "vendor.nt.hardware.charge"
 
 #include <fcntl.h>
 #include <chrono>
@@ -12,7 +12,7 @@
 #include <fstream>
 #include <thread>
 #include <log/log.h>
-#include "charging-control.h"
+#include "charge.h"
 
 #define USB_CHG_ONLINE "/sys/class/power_supply/usb/online"
 #define USB_CHG_TYPE "/sys/class/power_supply/usb/usb_type"

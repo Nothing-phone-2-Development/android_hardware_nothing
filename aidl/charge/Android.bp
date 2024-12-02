@@ -1,0 +1,39 @@
+cc_defaults {
+    name: "vendor.nt.hardware.charge-service-defaults",
+    relative_install_path: "hw",
+    vintf_fragments: ["vendor.nt.hardware.charge-service.xml"],
+    vendor: true,
+    recovery_available: true,
+
+    srcs: [
+        "service.cpp",
+        "charge.cpp",
+    ],
+
+    shared_libs: [
+        "liblog",
+        "libbinder_ndk",
+        "android.hardware.health-V2-ndk",
+    ],
+
+    cflags: [
+        "-Wall",
+        "-Werror",
+    ],
+}
+
+cc_binary {
+    name: "vendor.nt.hardware.charge-service",
+    recovery: false,
+    vendor: true,
+    defaults: ["vendor.nt.hardware.charge-service-defaults"],
+    init_rc: ["vendor.nt.hardware.charge-service.rc"],
+}
+
+cc_binary {
+    name: "vendor.nt.hardware.charge-service_recovery",
+    vendor: false,
+    recovery: true,
+    defaults: ["vendor.nt.hardware.charge-service-defaults"],
+    init_rc: ["vendor.nt.hardware.charge-service_recovery.rc"],
+}

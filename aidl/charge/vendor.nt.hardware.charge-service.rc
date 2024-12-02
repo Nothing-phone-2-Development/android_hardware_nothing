@@ -1,8 +1,8 @@
-service vendor.nt.charging-control /vendor/bin/nt.charging-control
+service vendor.charge-default /vendor/bin/hw/vendor.nt.hardware.charge-service
+    interface aidl vendor.nt.hardware.charge.ICharge/default
     class hal
     user system
     group system
-    disabled
 
 on property:sys.boot_completed=1
     chown system system /sys/class/power_supply/usb/online
@@ -11,5 +11,3 @@ on property:sys.boot_completed=1
     chown system system /sys/class/thermal/thermal_zone96/temp
     chown system system /sys/class/thermal/thermal_zone76/temp
     chown system system /sys/class/qcom-battery/scenario_fcc
-
-    start vendor.nt.charging-control

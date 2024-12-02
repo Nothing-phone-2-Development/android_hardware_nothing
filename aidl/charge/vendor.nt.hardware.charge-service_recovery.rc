@@ -1,0 +1,4 @@
+service vendor.health-recovery /system/bin/hw/vendor.nt.hardware.charge-service_recovery
+    class hal
+    user system
+    group system
