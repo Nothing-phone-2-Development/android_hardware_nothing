@@ -4,6 +4,9 @@
 # Charging
 /vendor/bin/hw/vendor\.lineage\.powershare@1\.0-service\.nt  u:object_r:hal_lineage_powershare_default_exec:s0
 
+# Display
+/vendor/bin/hw/vendor\.lineage\.livedisplay@2\.1-service\.nt  u:object_r:hal_lineage_livedisplay_qti_exec:s0
+
 # Fingerprint
 /vendor/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.3-service\.nt  u:object_r:hal_fingerprint_default_exec:s0
 /dev/goodix_fp                                                              u:object_r:fingerprint_device:s0
