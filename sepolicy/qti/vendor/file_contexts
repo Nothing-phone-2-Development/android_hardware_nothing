@@ -17,7 +17,6 @@
 /sys/devices/platform/soc/994000.i2c/i2c-0/0-003a/leds/led_strips(/.*)?  u:object_r:sysfs_leds:s0
 
 # NFC
-/vendor/bin/hw/android\.hardware\.nfc-service\.nxp  u:object_r:hal_nfc_default_exec:s0
 /dev/pn553                                          u:object_r:nfc_device:s0
 
 # Partitions
